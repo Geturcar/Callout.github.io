@@ -1,4 +1,5 @@
-const callOut = ["1, 2, Opposite", "1, 2, Outside", "1, 2, Middle", "1, 2, Dump"]
+const callOut = ["Opposite", "Outside", "Middle", "Dump"]
+const first = "1, 2, 3"
 let speech = new SpeechSynthesisUtterance();
 let Switch = false
 
@@ -19,7 +20,7 @@ async function TTS(){
         await sleep(5000);
         let randNum = Math.floor(Math.random() * 4 );
         let Call = callOut[randNum];
-        speech.text = Call;
+        speech.text = first+Call;
         window.speechSynthesis.speak(speech);
         }
     }
