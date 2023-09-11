@@ -22,6 +22,6 @@ async function TTS(){
         console.log(randNum);
         speech.text = Call;
         window.speechSynthesis.speak(speech);
-        await sleep(2500);
+        await sleep(5000);
         }
     }
