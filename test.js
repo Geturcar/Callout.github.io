@@ -10,11 +10,11 @@ function sleep(ms) {
 function Off(){
     if (Switch == true){
     Switch = false;
-    button.innerHTML("OFF");
+    button.innerHTML="OFF";
     }
     else{
         Switch = true;
-        button.innerHTML("ON");
+        button.innerHTML="ON";
     }
     TTS()
 }
