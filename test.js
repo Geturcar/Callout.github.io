@@ -23,5 +23,6 @@ async function TTS(){
         let text = first+Call;
         speech.text = text;
         window.speechSynthesis.speak(speech);
+        await sleep(5000);
         }
     }
