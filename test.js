@@ -20,7 +20,8 @@ async function TTS(){
         await sleep(5000);
         let randNum = Math.floor(Math.random() * 4 );
         let Call = callOut[randNum];
-        speech.text = first+Call;
+        let text = first+Call;
+        speech.text = text;
         window.speechSynthesis.speak(speech);
         }
     }
