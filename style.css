@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root{
+    --gradient:linear-gradient(90deg,#007cf0, #00dfd8)
+}
+body{
+    font: 'Rubik', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    background-color: #202020;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.center{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-wrapper{
+    border-radius: 6px;
+    background:var(--gradient);
+    padding: 1px;
+}
+button{
+    background: black ;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 0;
+    text-align: center;
+    padding: 10px 5rem;
+    transition: 400ms;
+}
+button:hover{
+    background:var(--gradient);
+    color:black;
+    scale: 0.8;
+}
