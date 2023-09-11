@@ -13,15 +13,13 @@ function Off(){
         Switch = true;
     }
     TTS()
-    console.log(Switch);
 }
 async function TTS(){
     while(Switch){
+        await sleep(5000);
         let randNum = Math.floor(Math.random() * 4 );
         let Call = callOut[randNum];
-        console.log(randNum);
         speech.text = Call;
         window.speechSynthesis.speak(speech);
-        await sleep(5000);
         }
     }
