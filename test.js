@@ -1,5 +1,5 @@
-const callOut = ["Opposite", "Outside", "Middle", "Dump"]
-const first = "1, 2, 3, ";
+const callOut = ["Opposite ", "Outside ", "Middle ", "Dump "]
+const first = "3, 2, 1";
 const button = document.getElementById("Switch");
 let speech = new SpeechSynthesisUtterance();
 let Switch = false
@@ -23,7 +23,7 @@ async function TTS(){
         await sleep(5000);
         let randNum = Math.floor(Math.random() * 4 );
         let Call = callOut[randNum];
-        let text = first+Call;
+        let text = Call+first;
         speech.text = text;
         window.speechSynthesis.speak(speech);
         await sleep(5000);
