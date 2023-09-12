@@ -1,5 +1,5 @@
 const callOut = ["Opposite", "Outside", "Middle", "Dump"]
-const first = "1, 2, 3";
+const first = "1, 2, 3, ";
 const button = document.getElementById("Switch");
 let speech = new SpeechSynthesisUtterance();
 let Switch = false
