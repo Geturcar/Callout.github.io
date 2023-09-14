@@ -37,7 +37,7 @@ button{
     border: 0;
     text-align: center;
     padding: 10px 5rem;
-    transition: 400ms;
+    transition: 1000ms ease-in-out all;
     filter: blur(0px);
 }
 button:active, button-wrapper{
