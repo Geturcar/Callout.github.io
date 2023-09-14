@@ -4,12 +4,13 @@
     --gradient:linear-gradient(90deg,#007cf0, #00dfd8)
 }
 body{
-    font: 'Rubik', sans-serif;
+    
     overflow: hidden;
     height: 100vh;
     background-color: #202020;
 }
 *{
+    font-family: 'Rubik', sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
