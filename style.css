@@ -40,7 +40,7 @@ button{
     transition: 400ms;
     filter: blur(0px);
 }
-button:hover, button-wrapper{
+button:active, button-wrapper{
     background:var(--gradient);
     color:black;
 }
